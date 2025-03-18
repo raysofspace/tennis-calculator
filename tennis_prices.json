@@ -1,0 +1,45 @@
+{
+  "venue": "Helsingin Mailapelikeskus",
+  "season": "Spring 2025",
+  "sport": "Tennis",
+  "prices_per_hour": {
+    "monday_to_thursday": [
+      {"time_range": "5:30-15:30", "regular_price": 21, "discount_price": 20},
+      {"time_range": "15:30-16:30", "regular_price": 25},
+      {"time_range": "16:30-21:30", "regular_price": 35.5},
+      {"time_range": "21:30-23:00", "regular_price": 29.5}
+    ],
+    "friday": [
+      {"time_range": "5:30-15:30", "regular_price": 21, "discount_price": 20},
+      {"time_range": "15:30-16:30", "regular_price": 25},
+      {"time_range": "16:30-19:30", "regular_price": 35.5},
+      {"time_range": "19:30-20:30", "regular_price": 27},
+      {"time_range": "20:30-23:00", "regular_price": 21}
+    ],
+    "saturday": [
+      {"time_range": "5:30-18:30", "regular_price": 29.5},
+      {"time_range": "18:30-23:00", "regular_price": 21}
+    ],
+    "sunday": [
+      {"time_range": "5:30-16:30", "regular_price": 29.5},
+      {"time_range": "16:30-20:30", "regular_price": 35.5},
+      {"time_range": "20:30-23:00", "regular_price": 21}
+    ]
+  },
+  "discount_eligibility": ["Students", "Pensioners", "PuiU/PTC"],
+  "ball_machine": {
+    "regular_price": 10,
+    "discount_price": 8,
+    "discount_eligibility": ["PuiU/PTC"],
+    "booking_note": "Can be booked during customer service opening hours"
+  },
+  "additional_fees": {
+    "late_billing_fee": 5
+  },
+  "contact_information": {
+    "address": "Tapulikaupungintie 4, 00750 Helsinki",
+    "phone": "(09) 346 2511",
+    "email": "info@mailapelikeskus.fi"
+  },
+  "source": "https://mailapelikeskus.fi/tennis/"
+} 

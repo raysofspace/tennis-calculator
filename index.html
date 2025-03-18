@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tennis Coaching Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tennis Coaching Calculator</h1>
+        <div class="calculator-container">
+            <div class="form-container">
+                <h2>Add Coaching Session</h2>
+                <form id="coaching-form">
+                    <div class="form-group">
+                        <label for="session-date">Date:</label>
+                        <input type="date" id="session-date" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="session-time">Time (HH:MM):</label>
+                        <input type="time" id="session-time" step="1800" required>
+                        <small class="input-help">Court times available at :00 and :30 only</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="session-duration">Duration (hours):</label>
+                        <input type="number" id="session-duration" min="1" max="3" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="players-count">Number of Players:</label>
+                        <input type="number" id="players-count" min="1" max="10" value="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="discount-eligible">Discount Eligible:</label>
+                        <input type="checkbox" id="discount-eligible">
+                        <span class="discount-info">(Students, Pensioners, PuiU/PTC)</span>
+                    </div>
+                    <button type="submit" class="btn">Add Session</button>
+                </form>
+            </div>
+            
+            <div class="summary-container">
+                <h2>Sessions Summary</h2>
+                <div id="sessions-list" class="sessions-list">
+                    <p class="empty-list-message">No sessions added yet.</p>
+                </div>
+                <div class="total-container">
+                    <h3>Total Amount</h3>
+                    <p id="total-amount">€0.00</p>
+                    <button id="clear-sessions" class="btn btn-secondary">Clear All Sessions</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pricing-info">
+        <h3>Pricing Information</h3>
+        <p>Coach Fee: €50 per session, divided among players</p>
+        <p>Court Fee: Based on current rates at Helsingin Mailapelikeskus</p>
+        <p>Source: <a href="https://mailapelikeskus.fi/tennis/" target="_blank">Mailapelikeskus Tennis</a></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
